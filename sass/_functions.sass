@@ -1,0 +1,7 @@
+// // Get color from color scheme
+@function getcolor($color-name, $color-variant: base) 
+    @return map-get(map-get($colorscheme, $color-name), $color-variant)
+
+// Mix black color 
+@function shade($color, $percentage) 
+	@return mix(black, $color, $percentage)

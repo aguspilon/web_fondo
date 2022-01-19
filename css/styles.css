@@ -1,0 +1,493 @@
+/**************mixin*****************/
+/**************mixin*****************/
+/**************font*****************/
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Anton-Regular";
+  src: url(../fonts/Anton-Regular.ttf);
+}
+
+/**************font*****************/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins-Regular";
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+h2 {
+  font-family: 'Anton-Regular';
+  font-size: 48px;
+  padding-bottom: 1em;
+}
+
+h3 {
+  font-family: 'Anton-Regular';
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.button {
+  background: #FC6354;
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 5px;
+}
+
+.menu {
+  display: block;
+}
+
+.menuppal {
+  display: none;
+}
+
+.hero__cont {
+  position: relative;
+}
+
+.hero__cont .box {
+  position: absolute;
+  max-width: 70%;
+  top: 11em;
+  left: 25em;
+}
+
+.hero__cont .box h1 {
+  font-family: 'Anton-Regular';
+  color: #fff;
+  font-size: 115px;
+}
+
+.hero__cont .hero__section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.hero__cont .hero__section .hero__background {
+  background-image: url("../img/0.jpg");
+  background-size: cover;
+  height: 800px;
+}
+
+.hero__cont .hero__section .hero__color {
+  background: #000;
+}
+
+.hero__cont .menu {
+  position: absolute;
+  top: 1em;
+  width: 100%;
+}
+
+.hero__cont .menu ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2em;
+}
+
+.hero__cont .menu ul li {
+  list-style: none;
+}
+
+.hero__cont .menu ul li a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.hero__cont .menu nav {
+  display: flex;
+}
+
+.hero__cont .menu nav .hero__links {
+  margin-left: auto;
+}
+
+#section__latente {
+  max-width: 1232px;
+  padding: 4em 4em 0 4em;
+  margin: 0 auto;
+}
+
+#section__latente h2 {
+  text-align: center;
+  color: #000;
+}
+
+#section__latente .latente__description p {
+  text-align: center;
+}
+
+.latente__reportaje {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* height: 470px;*/
+  min-height: 500px;
+}
+
+.latente__reportaje .latente__text {
+  background: #000;
+  padding: 2em 2em 2em 6em;
+  display: flex;
+  align-items: center;
+}
+
+.latente__reportaje .latente__text h3 {
+  color: #fff;
+}
+
+.latente__reportaje .latente__text p {
+  color: #fff;
+}
+
+.latente__reportaje .latente__text .margin__box {
+  margin-bottom: 3em;
+}
+
+.latente__reportaje .latnte__img {
+  background-image: url("../img/1.jpeg");
+  background-size: cover;
+  height: 470px;
+  min-height: 500px;
+}
+
+.latente__only__report {
+  max-width: 1232px;
+  padding: 4em;
+  margin: 0 auto;
+}
+
+.latente__only__report .first__report {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*grid-template-rows: auto auto;*/
+  grid-gap: 2rem;
+}
+
+.latente__only__report .first__report .report__text h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.latente__only__report .first__report img {
+  width: 100%;
+}
+
+/**************Historia***************/
+#section__historia {
+  background: #000;
+}
+
+#section__historia .historia__video {
+  max-width: 1232px;
+  padding: 4em;
+  margin: 0 auto;
+}
+
+#section__historia .historia__video h2 {
+  color: #FFF;
+  text-align: center;
+}
+
+.historia__2021 {
+  max-width: 1232px;
+  padding: 4em;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.historia__2021 .historia__block h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.historia__2021 aside {
+  grid-column: 1/5;
+  background: #000;
+  padding: 4em;
+  color: #fff;
+  margin-top: 4rem;
+}
+
+.section__fotoreportaje {
+  max-width: 1232px;
+  padding: 4em;
+  margin: 0 auto;
+}
+
+.section__fotoreportaje h2 {
+  text-align: center;
+}
+
+.section__fotoreportaje .fotoreportaje__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  grid-template-rows: 1fr 1fr;
+}
+
+.section__fotoreportaje .fotoreportaje__wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section__fotoreportaje .fotoreportaje__wrapper .babyfutbol__img {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.section__fotoreportaje .fotoreportaje__wrapper .babyfutbol__text {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+
+.fotoreportaje__article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  padding-top: 1rem;
+}
+
+.fotoreportaje__article img {
+  width: 100%;
+}
+
+.section__report__soccer {
+  max-width: 1232px;
+  padding: 2em 4em 4em 4em;
+  margin: 0 auto;
+}
+
+.section__report__soccer article {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 16px;
+  background: #000;
+}
+
+.section__report__soccer article .section__report__soccer__text {
+  padding: 4em;
+}
+
+.section__report__soccer article .section__report__soccer__text h3 {
+  color: #fff;
+}
+
+.section__report__soccer article .section__report__soccer__text p {
+  color: #fff;
+}
+
+.section__report__soccer article .section__report__soccer__img {
+  background-image: url("../img/6.jpeg");
+  background-size: cover;
+  width: 100%;
+  min-height: 420px;
+}
+
+#section__referentes {
+  max-width: 1232px;
+  padding: 4em;
+  margin: 0 auto;
+}
+
+#section__referentes h2 {
+  text-align: center;
+}
+
+footer {
+  background: #f7f7f7;
+}
+
+footer .footer__contacto {
+  max-width: 1232px;
+  padding: 4em;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*********texto show and hide************/
+.text-overflow {
+  height: 120px;
+  display: block;
+  overflow: hidden;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.btn-overflow {
+  display: none;
+  text-decoration: none;
+  color: #FC6354 !important;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .menuppal {
+    display: block;
+  }
+  .hamburger {
+    position: fixed;
+    background-color: transparent;
+    left: 0;
+    top: 0;
+    height: 63px;
+    width: 100%;
+    background-color: #000;
+    padding: 20px 20px;
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    z-index: 1002;
+    cursor: pointer;
+    user-select: none;
+  }
+  .hamburger.is-active {
+    background-color: none;
+  }
+  ._layer {
+    background: #fff;
+    margin-bottom: 3px;
+    border-radius: 2px;
+    width: 28px;
+    height: 3px;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  }
+  .hamburger:hover .-top {
+    transform: translateY(-100%);
+  }
+  .hamburger:hover .-bottom {
+    transform: translateY(100%);
+  }
+  .hamburger.is-active .-top {
+    transform: translateY(200%) rotate(45deg) !important;
+  }
+  .hamburger.is-active .-mid {
+    opacity: 0;
+  }
+  .hamburger.is-active .-bottom {
+    transform: translateY(-200%) rotate(135deg) !important;
+  }
+  .menuppal.is_active {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  .menuppal {
+    background-color: #000;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    transform: translate3d(0px, -100%, 0px);
+    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+    width: 100%;
+    z-index: 1001;
+  }
+  .menuppal ul {
+    margin-top: 5rem;
+    padding: 0;
+  }
+  .menuppal ul li {
+    list-style: none;
+    text-align: center;
+    font-size: 16px;
+    line-height: 3em;
+    height: 3em;
+    color: #fff;
+    text-transform: none;
+    font-weight: bold;
+  }
+  .menuppal ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .menuppal ul li a:hover {
+    text-decoration: none;
+    color: #333;
+  }
+}
+
+/*****responsive*****/
+@media (max-width: 576px) {
+  .hero__cont .box {
+    left: 0;
+  }
+  .hero__cont .box h1 {
+    font-size: 50px;
+  }
+  .hero__cont .hero__section {
+    grid-template-columns: 1fr;
+  }
+  .hero__cont .hero__section .hero__color {
+    display: none;
+  }
+  .hero__cont .hero__section .hero__background {
+    height: 500px;
+  }
+  #section__latente {
+    padding: 4em 1em;
+  }
+  .latente__reportaje {
+    grid-template-columns: 1fr;
+  }
+  .latente__reportaje .latente__text {
+    padding: 4em 1em;
+  }
+  .latente__only__report {
+    padding: 4em 1em;
+  }
+  .latente__only__report .first__report {
+    grid-template-columns: 1fr;
+  }
+  #section__historia .historia__video {
+    padding: 4em 1em;
+  }
+  .historia__2021 {
+    padding: 4em 1em;
+  }
+  .historia__2021 aside {
+    padding: 2em;
+    margin-top: 1rem;
+  }
+  .section__fotoreportaje {
+    padding: 4em 1em;
+  }
+  .section__fotoreportaje .fotoreportaje__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .section__fotoreportaje .fotoreportaje__wrapper .babyfutbol__text {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .fotoreportaje__article {
+    grid-template-columns: 1fr;
+  }
+  .section__report__soccer {
+    padding: 4em 1em;
+  }
+  .section__report__soccer article {
+    grid-template-columns: 1fr;
+  }
+  .section__report__soccer article .section__report__soccer__text {
+    padding: 2em;
+  }
+  #section__referentes {
+    padding: 4em 1em;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
